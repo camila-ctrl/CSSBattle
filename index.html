@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="./images/rose-icon.png">
+
+    <title>Curso DW - Cami</title>
+
+    <script 
+        src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+	    $( document ).ready(function() {
+	    	$('#menu_on').click(function(){ // Al hacer click...
+	    	   $('body').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
+	    	})
+            $('.link').click(function(){ // Al hacer click...
+	    	   $('body').toggleClass('visible_menu'); // Añadimos o eliminamos la clase 'visible_menu' al body
+	    	})
+	    });
+    </script>
+
+</head>
+<body>
+    <header>
+        <a href="#" id="menu_on">
+            <span></span>
+		    <span></span>
+		    <span></span>
+	    </a>
+    </header>
+    <nav>	
+        <ul>
+            <li><a href="#act1" class="link">Actividad N°1</a></li>
+            <li><a href="#act2" class="link">Actividad N°2</a></li>
+            <li><a href="#act3" class="link">Actividad N°3</a></li>
+            <li><a href="#act4" class="link">Actividad N°4</a></li>
+        </ul>
+    </nav>
+
+    <section class="home">
+        <div id="home-img">
+
+            <!-- <img src="./images/banner.png"> -->
+            <div class="home-texto">
+                <p>6to TIC | Camila Pérez</p>
+                <h1>¡Bienvenidx a mis<br>soluciones de <a target="_blank" href="https://cssbattle.dev/battle/1">CSS Batlle</a>!</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <main>
+        <article id="act1">
+            <a href="https://cssbattle.dev/play/1" target="_blank"><h1>#1 - Simply Square</h1></a>
+            <div class="card">
+                <div class="visual">
+                   <div id="act1-div">
+                       <div></div>
+                   </div>
+                </div>
+                <div class="code">
+<pre>
+<span class="code-format">.parent</span> {
+    background-color: <span id="act1-color1">#5d3a3a</span>;
+}
+
+<span class="code-format">.parent div</span> {
+  width: 50%;
+  height: 200px;
+  background-color: <span id="act1-color2">#b5e0ba</span>;
+}
+</pre>
+                </div>
+            </div>
+        </article>
+
+        <article id="act2">
+            <a href="https://cssbattle.dev/play/2" target="_blank"><h1>#2 - Carrom</h1></a>
+            <div class="card">
+                <div class="visual">
+                    <div id="act2-div">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="code">
+<pre>
+<span class="code-format">.parent</span> {
+  display: grid;
+  grid-template: "div div";
+  background-color: <span id="act2-color1">#62374e</span>;
+}
+
+<span class="code-format">.parent div</span> {
+  margin: 42px 158px 58px 42px;
+  width: 50px;
+  height: 50px;
+  background-color: <span id="act2-color2">#fdc57b</span>;
+}
+</pre>
+                </div>
+            </div>
+        </article>
+
+        <article id="act3">
+            <a href="https://cssbattle.dev/play/3" target="_blank"><h1>#3 - Push Button</h1></a>
+            <div class="card">
+                <div class="visual">
+                    <div id="act3-div">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="code">
+<pre>
+<span class="code-format">.parent</span> {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ; <span id="act3-color1">#6592cf</span>;
+}
+
+<span class="code-format">.parent div:nth-child(1)</span> {
+  width: 260px;
+  height: 150px;
+  background-color: <span id="act3-color2">#243d83</span>;
+}
+
+<span class="code-format">.parent div:nth-child(2)</span> {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  border: solid 50px <span id="act3-color1">#6592CF</span>;
+}
+
+<span class="code-format">.parent div:nth-child(3)</span> {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute
+  background-color: <span id="act3-color3">#eeb850</span>;
+}
+</pre>
+                </div>
+            </div>
+        </article>
+
+        <article id="act4">
+            <a href="https://cssbattle.dev/play/4" target="_blank"><h1>#4 - Ups n Downs</h1></a>
+            <div class="card">
+                <div class="visual">
+                   <div id="act4-div">
+                    <div id="act4-div-A">
+                        <p></p>
+                    </div>
+                    <div id="act4-div-B">
+                        <p></p>
+                        <p></p>
+                    </div>
+                   </div>
+                </div>
+                <div class="code">
+<pre>
+<span class="code-format">.parent</span> {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: <span id="act4-color1">#62306d</span>;
+}
+
+<span class="code-format">.parent div</span> {
+  width: 100px;
+  height: 100px;
+  background-color: <span id="act4-color2">#f7ec7d</span>;
+}
+
+
+<span class="code-format">.parent .div-A</span> {
+  display: flex;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+<span class="code-format">.div-A > div</span> {
+  margin: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+
+<span class="code-format">.parent .div-B</span> {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+<span class="code-format">.div-B > div</span> {
+  border-radius: 0 0 50% 50%;
+  margin: 0;
+}
+
+</pre>
+                </div>
+            </div>
+        </article>
+
+        <article id="act5">
+            <h1>Próximamente...  <a href="https://cssbattle.dev/play/5" target="_blank"><span id="act5-title">#5 - Acid rain</span></a> </h1>
+        </article>
+    </main>
+    <footer>
+        <h2>Camila Pérez</h2>
+        <hr>
+        <a target="_blank" href="https://github.com/camila-ctrl"><img src="./images/GitHub-Logo.png" alt="link github"></a>
+    </footer>
+    
+</body>
+</html>
